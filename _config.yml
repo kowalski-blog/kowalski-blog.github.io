@@ -1,3 +1,9 @@
-theme: jekyll-theme-hacker
-title: My Cybersecurity Journey
-description: Documenting my path in infosec,projects, CTFs, and certifications.
+title: KOWALSKI - Cybersecurity Journey
+description: My infosec journey with projects, CTFs and certifications.
+theme: minima # Base theme, overridden by custom CSS
+permalink: /:categories/:title/ # Pretty URLs (e.g., /ctf/hackthebox/administrator/)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
