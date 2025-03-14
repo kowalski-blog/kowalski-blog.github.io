@@ -1,6 +1,7 @@
 title: KOWALSKI - Cybersecurity Journey
 description: My infosec journey with projects, CTFs and certifications.
 theme: minima # Base theme, overridden by custom CSS
+baseurl: "" # Empty for root domain
 permalink: /:categories/:title/ # Pretty URLs (e.g., /ctf/hackthebox/administrator/)
 defaults:
   - scope:
