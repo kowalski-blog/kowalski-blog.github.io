@@ -1,1 +1,99 @@
 
+body {
+    background-color: #1a1a1a;
+    color: #d0d0d0;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 20px;
+}
+
+.man-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+pre {
+    margin: 0;
+    color: #d0d0d0;
+}
+
+.menu-bar {
+    margin-bottom: 20px;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 16px;
+    color: #00ff00;
+}
+
+h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 0 5px 0;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 14px;
+    margin: 15px 0 5px 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 15px 20px;
+}
+
+pre code {
+    background-color: #2a2a2a;
+    padding: 10px;
+    display: block;
+}
+
+a {
+    color: #00cc00;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #00ff00;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2a2a2a;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #d0d0d0;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #3a3a3a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.submenu {
+    margin: 5px 0;
+}
+
+.submenu a {
+    margin-left: 10px;
+}
