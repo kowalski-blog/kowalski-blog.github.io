@@ -1,40 +1,14 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>KOWALSKI(1) - Cybersecurity Journey</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="man-page">
-        <!-- Menu Bar -->
-        <nav class="menu-bar">
-            <pre><span class="brand">KOWALSKI</span>       <a href="about.html">About</a> | <div class="dropdown">CTF Writeups ▼<div class="dropdown-content"><a href="/ctf/hackthebox.html">HackTheBox</a><a href="/ctf/tryhackme.html">TryHackMe</a><a href="/ctf/overthewire.html">OverTheWire</a><a href="/ctf/pwntilldawn.html">PwnTillDawn</a><a href="/ctf/hackmyvm.html">HackMyVM</a><a href="/ctf/provinggrounds.html">ProvingGrounds</a></div></div> | <div class="dropdown">Certifications ▼<div class="dropdown-content"><div class="submenu">INFOSEC<a href="/certs/infosec/secplus.html">Security+</a><a href="/certs/infosec/oscp.html">OSCP</a></div><div class="submenu">LINUX<a href="/certs/linux/rhcsa.html">RHCSA</a><a href="/certs/linux/rhel.html">RHEL</a></div><div class="submenu">CLOUD<a href="/certs/cloud/azure.html">Azure</a><a href="/certs/cloud/aws.html">AWS</a></div></div></div> | <div class="dropdown">Connect ▼<div class="dropdown-content"><a href="https://linkedin.com/in/yourprofile">LinkedIn</a><a href="https://twitter.com/yourhandle">Twitter</a><a href="https://youtube.com/yourchannel">YouTube</a><a href="mailto:your@email.com">Email</a></div></div></pre>
-        </nav>
-
-        <!-- Posts -->
-        <main>
-            <section>
-                <h1>POSTS</h1>
-                <article>
-                    <h2><a href="/posts/2025-03-14-ctf-hackmebox.html">HACKING HACKMEBOX</a></h2>
-                    <p>2025-03-14 14:30 - Cracking a root shell with nmap and metasploit.</p>
-                </article>
-                <article>
-                    <h2><a href="/posts/2025-03-10-sec-plus-day1.html">SECURITY+ DAY 1</a></h2>
-                    <p>2025-03-10 09:15 - Subnetting is my nemesis, but I’m getting there.</p>
-                </article>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <pre>
-----------------------------------------
-[<a href="https://github.com/yourusername">GitHub</a>] [<a href="https://twitter.com/yourhandle">Twitter</a>] [<a href="https://linkedin.com/in/yourprofile">LinkedIn</a>] [<a href="https://youtube.com/yourchannel">YouTube</a>]
-            </pre>
-        </footer>
-    </div>
-</body>
-</html>
+---
+layout: default
+---
+<div class="man-page">
+    <section>
+        <h1>POSTS</h1>
+        {% for post in site.posts %}
+        <article>
+            <h2><a href="{{ post.url }}">{{ post.title | upcase }}</a></h2>
+            <p>{{ post.date | date: "%Y-%m-%d %H:%M" }} - {{ post.excerpt }}</p>
+        </article>
+        {% endfor %}
+    </section>
+</div>
